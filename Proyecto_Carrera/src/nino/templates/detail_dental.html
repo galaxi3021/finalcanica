@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    {% load static  %} 
+    <title>Informe</title>
+</head>
+<body>
+    <h1>Área dental</h1>
+    <ul class="list-group">
+        <li class="list-group-item active"><strong>Nombre del niño:</strong><p>{{area_dental.nino}}</p> </li>
+        <li class="list-group-item"><strong>Diagnóstico:</strong><p>{{area_dental.diagnostico}}</p></li>
+        <li class="list-group-item"><strong>Intervención:</strong><p>{{area_dental.intervencion}}</p></li>
+        <li class="list-group-item"><strong>Próxima cita:</strong><p>{{area_dental.proxima_cita}}</p></li>
+      </ul>
+      <button class="btn btn-primary hidden-print float-right" style="width: 15%;" onclick="myFunction()">Imprimir</button>
+      <a href="/a_dental" style="width:15%;" class="btn btn-danger hidden-print float-right">Regresar</a>
+</body>
+<script>
+        function myFunction() {
+           window.print();
+        }
+    </script>     
+</html>

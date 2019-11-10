@@ -1,0 +1,63 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+            
+    </head>
+    <body>
+            <script>
+                    function myFunction() {
+                       window.print();
+                    }
+                </script>      
+            <center>
+                    <h1 style="color: #01579B;"><strong>Listado General de niños</strong></h1>
+                    
+            </center>
+            <br>
+            <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Nombre del niño</th>
+                        <th scope="col">Apellidos del niño</th>
+                        <th scope="col">Fecha de nacimiento</th>
+                        <th scope="col">Fecha de ingreso</th>
+                        <th scope="col">Sexo</th>
+                        <th scope="col">Lugar de nacimiento</th>
+                        <th scope="col">Expediente</th>
+                        <th scope="col">Juzgado</th>
+                        <th scope="col">Oficial</th>
+                        <th scope="col">Motivo de ingreso</th>
+                        <th scope="col">Nombre de la madre</th>
+                        <th scope="col">Nombre del padre</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                        {% for reporte in object_list %}
+                            
+                        
+                      <tr>
+                        <th scope="row">{{reporte.id}}</th>
+                        <td>{{reporte.nombre_nino}}</td>
+                        <td>{{reporte.apellido_nino}}</td>
+                        <td>{{reporte.fecha_nacimiento}}</td>
+                        <td>{{reporte.fecha_ingreso}}</td>
+                        <td>{{reporte.sexo}}</td>
+                        <td>{{reporte.lugar_nacimiento}}</td>
+                        <td>{{reporte.no_expediente}}</td>
+                        <td>{{reporte.juzgado_refiere}}</td>
+                        <td>{{reporte.oficial}}</td>
+                        <td>{{reporte.motivo_ingreso}}</td>
+                        <td>{{reporte.nombre_madre}}</td>
+                        <td>{{reporte.nombre_padre}}</td>
+                      </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                  <button class="btn btn-success hidden-print float-right" style="width: 15%;" onclick="myFunction()">Imprimir</button>
+                  <a href="/menu" style="width:15%;" class="btn btn-danger hidden-print float-right">Regresar</a>
+        
+    </body>
+</html>

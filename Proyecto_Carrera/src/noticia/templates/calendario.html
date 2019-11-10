@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Calendario</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% load static  %} 
+    <link rel="icon" href={% static 'noticia/images/favicon.ico' %} type="image/x-icon">
+    <link rel="stylesheet" type={% static 'noticia/text/css' %} href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900">
+    <link rel="stylesheet" href={% static 'noticia/css/bootstrap.css' %}>
+    <link rel="stylesheet" href={% static 'noticia/css/fonts.css' %}>
+    <link rel="stylesheet" href={% static 'noticia/css/style.css' %}>
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;} #fondo{background-image: style="background-image: url({% static 'noticia/images/banner.jpg' %})";}</style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="loader">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p>Cargando...</p>
+      </div>
+    </div>
+    <div class="page"><a class="banner banner-top" href="https://www.templatemonster.com/website-templates/monstroid2.html" target="_blank"></a>
+      <header class="section page-header rd-navbar-transparent-wrap">
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-transparent" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="44px" data-xl-stick-up-offset="44px" data-xxl-stick-up-offset="44px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+            <div class="rd-navbar-aside-outer rd-navbar-collapse">
+              <div class="rd-navbar-aside">
+                <div class="rd-navbar-info">
+                  
+                </div>
+                <ul class="list-lined">
+                  <li><a href="#"></a></li>
+                 
+                </ul>
+              </div>
+            </div>
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main-inner">
+                <div class="rd-navbar-main">
+                  <!--RD Navbar Panel-->
+                  <div class="rd-navbar-panel">
+                    <!--RD Navbar Toggle-->
+                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                    <!--RD Navbar Brand-->
+                    <div class="rd-navbar-brand">
+                      
+                      <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src={% static 'noticia/images/logo.png' %} alt="" width="146" height="22"/><img class="brand-logo-light" src={% static 'noticia/images/logo.png' %} alt="" width="155" height="22"/></a>
+                    </div>
+                  </div>
+                  <div class="rd-navbar-main-element">
+                    <div class="rd-navbar-nav-wrap">
+                      <ul class="rd-navbar-nav">
+                          <li class="rd-nav-item "><a class="rd-nav-link" href="/admin">Administración</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="rd-navbar-bg novi-background bg-image" style="background-image: url({% static 'noticia/images/banner.jpg' %})"></div>
+      </header>
+      <!-- Breadcrumbs-->
+      <!--section class="breadcrumbs-custom bg-image novi-background bg-primary">
+        <div class="container">
+          <ul class="breadcrumbs-custom-path">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="active">Calendario</li>
+          </ul>
+        </div>
+      </section-->
+      <!--aqui termina el encabezado-->
+
+      <div class="fondo">
+        <center id="">
+          <br>
+          <iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23b3fffe&amp;src=canica.sanmarcos%40gmail.com&ctz=America%2FGuatemala&amp;src=Y2FuaWNhLnNhbm1hcmNvc0BnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZXMuZ3QjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043&amp;showTitle=0&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=1" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </center>
+    </div>
+      
+
+      <!--aqui empieza el footer-->
+      <footer class="section footer-classic">
+        <div class="footer-inner-1">
+          <div class="container">
+            <div class="row row-40">
+              <div class="col-md-5 col-lg-3">
+                <h5>Contacto</h5>
+                <ul class="contact-list font-weight-bold">
+                  <li>
+                    <div class="unit unit-spacing-xs">
+                      <div class="unit-left">
+                        <div class="icon icon-sm icon-primary novi-icon mdi mdi-map-marker"></div>
+                      </div>
+                      <div class="unit-body">Iglesia Palabra en Acción <br>San Marcos, Guatemala</div>
+                    </div>
+                  </li>
+                  <br>
+                  <br>
+                  <li>
+                    <div class="unit unit-spacing-xs">
+                      <div class="unit-left">
+                        <div class="icon icon-sm icon-primary novi-icon mdi mdi-phone"></div>
+                      </div>
+                      <div class="unit-body"><a href="tel:#">+502 7760-1126 <br> +502 5158-7828 </a></div>
+                    </div>
+                  </li>
+                  <br>
+                  <br>
+                  <li>
+                    <div class="unit unit-spacing-xs">
+                      <div class="unit-left">
+                        <div class="icon icon-sm icon-primary novi-icon mdi mdi-email"></div>
+                      </div>
+                      <div class="unit-body"> canica.sanmarcos@gmail.com </a></div>
+                    </div>
+                  </li>
+
+
+              </div>
+              <div class="col-md-6 col-lg-5">
+                <h5>Menú Rápido</h5>
+                <div class="row row-5 justify-content-between">
+                  <div class="col-sm-6">
+                    <ul class="footer-list big">
+                      <li><a href="/admin">Administración</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-4">
+                <h5></h5>
+                <div class="row row-30 align-items-center text-center">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-inner-2">
+          <div class="container">
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. Todos los derechos reservados. Desarrollado por grupo de <a href="https://www.mesoamericana.edu.gt/">  Universidad Mesoamericana</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src={% static 'noticia/js/core.min.js' %}></script>
+    <script src={% static 'noticia/js/script.js' %}></script>
+  </body>
+</html>

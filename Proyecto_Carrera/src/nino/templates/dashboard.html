@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static  %} 
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+</head>
+<style>
+  .icono{
+    font-size: 50px;
+    color: #2ECC71 ;
+  }
+  .icono1{
+    font-size: 50px;
+    color:  #2E86C1 ;
+  }
+  .icono2{
+    font-size: 50px;
+    color: #FF5722 ;
+  }
+  .icono3{
+    font-size: 50px;
+    color: #B03A2E ;
+  }
+  .icono4{
+    font-size: 50px;
+    color: #76448A ;
+  }
+  .icono5{
+    font-size: 50px;
+    color: #C2185B ;
+  }
+</style>
+<body>
+  <p><img src="{% static 'noticia/images/banner.jpg' %}" alt=""></p>
+  <center>
+      <h1><strong> Menú de reportes</strong></h1>
+  </center>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary"> <a href="/general" class="icono2"><i class="fas fa-child"></i>Reporte general de niños</a></li>
+        <li class="list-group-item list-group-item-secondary"> <a href="/a_medica" class="icono"><i class="fas fa-book-medical"></i>Reporte del área médica</a></li>
+        <li class="list-group-item list-group-item-secondary"><a href="/a_social" class="icono1"><i class="fas fa-people-carry"></i>Reporte del área social</a></li>
+        <li class="list-group-item list-group-item-secondary"> <a href="/a_dental" class="icono3"><i class="fas fa-eye-dropper"></i>Reporte del área dental</a></li>
+        <li class="list-group-item list-group-item-secondary"><a href="/a_psicologica" class="icono4"><i class="fas fa-brain"></i>Reporte del área psicológica</a></li>
+        <li class="list-group-item list-group-item-secondary"><a href="/informe_medico" class="icono5"><i class="fas fa-stethoscope"></i>Reportes suministrados por el doctor</a></li>
+      </ul>
+
+    </body>
+</html>

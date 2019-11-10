@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    {% load static  %} 
+    <title>Informe</title>
+</head>
+<body>
+    <h1>Área médica</h1>
+    <ul class="list-group">
+        <li class="list-group-item active"><strong>Nombre del niño:</strong><p>{{area_medica.nino}}</p> </li>
+        <li class="list-group-item"><strong>Peso:</strong><p>{{area_medica.peso}} libras</p></li>
+        <li class="list-group-item"><strong>Altura:</strong><p>{{area_medica.altura}} metros</p></li>
+        <li class="list-group-item"><strong>Estado de la piel:</strong><p>{{area_medica.estado_piel}}</p></li>
+        <li class="list-group-item"><strong>Nivel de nutrición:</strong><p>{{area_medica.nivel_nutricion}}</p></li>
+      </ul>
+      <button class="btn btn-primary hidden-print float-right" style="width: 15%;" onclick="myFunction()">Imprimir</button>
+      <a href="/a_medica" style="width:15%;" class="btn btn-danger hidden-print float-right">Regresar</a>
+</body>
+<script>
+        function myFunction() {
+           window.print();
+        }
+    </script>     
+</html>
